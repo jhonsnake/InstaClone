@@ -1,0 +1,53 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='../public/scss/styles.scss')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js' defer='')
+  link(href='https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script&display=swap' rel='stylesheet')
+  script(src='./index.js' defer='')
+  title Instaclone
+section#main-container
+  .container
+    .row
+      .col.s10.push-s1
+        .row
+          .col.m5.hide-on-small-only
+            img.iphone(src='../public/img/iphonex.jpg' alt='')
+          .col.s12.m7
+            .signup-box
+              .row
+                h1.insta-clone Instaclone
+                form.signup-form
+                  h2 Reg&iacute;strate para ver todas las fotos
+                  .section
+                    a.btn.btn-fb.hide-on-small-only(href='#')
+                      | Iniciar sesi&oacute;n con facebook
+                    a.btn.btn-fb.hide-on-med-and-up(href='#')
+                      | Iniciar sesi&oacute;n
+                  .divider
+                  .section
+                    input(type='email' name='email' placeholder='Correo electrónico')
+                    input(type='text' name='nombre' placeholder='Nombre completo')
+                    input(type='text' name='username' placeholder='Nombre de usuario')
+                    input(type='password' name='password' placeholder='Contraseña')
+                    button.btn.waves-effect.waves-light.btn-signup(type='submit') Reg&iacute;strate
+            .row
+              .login-box
+                | &iquest;Tienes una cuenta? 
+                a(href='#') Entrar
+footer.site-footer
+  .container
+    .row
+      .col.s12.l3.centera-align
+        // Dropdown Trigger
+        a.dropdown-trigger.btn(href='#' data-target='dropdown1') Idioma
+        // Dropdown Structure
+        ul#dropdown1.dropdown-content
+          li
+            a(href='#!') Espa&ntilde;ol
+          li
+            a(href='#!') Ingl&eacute;s
+      .col.s12.l3.push-l6.center-align
+        | 2019 John Prada

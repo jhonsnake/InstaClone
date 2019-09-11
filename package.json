@@ -1,0 +1,26 @@
+{
+  "name": "empty-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.pug",
+    "build-prod": "parcel build src/index.pug"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2",
+    "pug": "^2.0.4",
+    "sass": "^1.23.0-module.beta.1"
+  }
+}
